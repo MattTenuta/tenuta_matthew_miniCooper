@@ -1,0 +1,50 @@
+{
+    "Mini_Electric": {
+        "name":"Mini Cooper S All Electric",
+        "desc":"Meet the EV for the city. The All-Electric MINI takes the iconic urban car into a whole new era.",
+        "features":"The All Electric Mini has a range of up to 183 km per full charge of the vehicle. WIth our all new DC Quick Charge, your mini can be at 80% charge in only 35 minutes! It has 181 HP and can do 0-60km/h in only 3.9 seconds. There is a 32 KWh battery capacity and you can get a 8 year warranty on the car as well.",
+        "price":"Starting from:$45,590",
+        "biopic":"mini-3door.jpg"
+    },
+    "Mini_All4": {
+        "name":"Mini Countryman All4",
+        "id": "All4",
+        "desc":"The adventurer, featuring a rugged ALL4 All-Wheel Drive system and our most spacious interior ever.",
+        "features":"Over and above ALL4 All-Wheel Drive, the MINI Countryman ALL4 and MINI Clubman ALL4 come equipped with several features designed to make quick work of winters many challenges. With heated side mirrors & windshield washer jets, electric front window defroster, 3-stage heated seats, you will be ready to take on the cold.",
+        "price":"Starting from:$37,990",
+        "biopic":"mini-5door.jpg"
+    },
+    "Mini_3door": {
+        "name":"Mini Cooper 3 Door",
+        "id": "3Door",
+        "desc":"The original icon that started it all, delievering pure motoring fun in a feisty, fuel-efficient package.",
+        "features":"The Mini 3 door is packed with a twin power turbo engine which is as powerful as they are fuel efficient. With Dynamic Damper Control, you have the choice between Comfort and Sport mode. The Mini 3 Door is also equipt with Multi-Link Rear Suspension which allows each wheel to react independantly to bumps on the road. Some more features include the new reimagined front grille, standard LED headlights, touchscreen display and much more.",
+        "price":"Starting from:$31,090",
+        "biopic":"mini-all4.jpg"
+    },
+    "Mini_5door": {
+        "name":"Mini Cooper 5 Door",
+        "id": "5Door",
+        "desc":"The iconic MINI hatch with 2 extra doors and a little more space for passengers and cargo.",
+        "features":"  The Mini 5 door was designed with all the great features of the Mini 3 door, but with a little extra space for those people who need a little more room. It's packed with a twin power turbo engine which is as powerful as they are fuel efficient. With Dynamic Damper Control, you have the choice between Comfort and Sport mode.Some more features include the new reimagined front grille, standard LED headlights, touchscreen display and much more.",
+        "price":"Starting from:$32,190",
+        "biopic":"mini-convertable.jpg"
+    },
+    "Mini_Convertable": {
+        "name":"Mini Cooper Convertable",
+        "id": "Convert",
+        "desc":"Meet the MINI Convertible, the most open-minded member of the MINI family. Featuring our signature 3-in-1 soft top roof and a refined interior with comfortable seating for four, it is always ready for your next open-air adventure. And with a lively Twin Power Turbo engine that can hit 100 km/h in a blistering 6.3 seconds (in the John Cooper Works variant), it is sure to deliver a few hair-raising thrills along the way. Discover the MINI Convertible today, and see the road in a whole new light.",
+        "features":"Unlike the others in the Mini family, the Mini Convertable is equipt with a 3 in 1 soft top roof which can be put down whenever you want to feel the wind in your hair. You will love our Digital Instrument Display positioned directly in your line of sight behind the wheel, it shows you everything you need to know about the car while driving. If you like living in style, the mini convertable has many different driving modes to fit your needs.",
+        "price":"Starting from:$37,990",
+        "biopic":"mini-electric.jpg"
+    },
+    "Mini_SUV": {
+        "name":"Mini Countryman Hybrid SUV",
+        "id": "SUV",
+        "desc":"Switch on and set off in the MINI Countryman Hybrid SUV. Our inventive solutions allowed us to create a MINI Countryman SAV with a hybrid drivetrain, so you can expect the same iconic MINI drive with the added bonus of lowering your carbon footprint.",
+        "features":"This Hybrid SUV is the same MINI Countryman SAV, just with the added bonus of a hybrid drivetrain, meaning more gas savings. You can lower your carbon footprint while still enjoying the MINI drive of your Countryman. The SUV comes with 221 HP, All wheel drive and 2.5 hour charging. We have put in a long lasting battery so that you can get around more without spending more on gas.",
+        "price":"Starting from:$54,890",
+        "biopic":"mini-convertable.jpg"
+    }
+
+  }
