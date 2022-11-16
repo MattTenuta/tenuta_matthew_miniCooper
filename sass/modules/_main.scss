@@ -1,0 +1,77 @@
+.logo {
+    width: 200px;
+    height: 150px;
+    padding: 0 0 1em 1em;
+}
+
+.nav {
+    display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        gap: 5em;
+}
+
+nav img {
+    display: inline-flex;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav li {
+    display: inline;
+    font-size: 30px;
+    padding: 1.5em;
+    border-radius: 3px;
+}
+
+.hero_img {
+        display: flex;
+        justify-content: center;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.pad2 {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.learnMore {
+    font-size: 20px;
+}
+
+.family {
+    display: flex;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    justify-content: center;
+}
+
+.img {
+    width: 1500px;
+    height: auto;
+}
+
+.miniImg {
+    width: 450px;
+    height: 350px;
+
+    &:hover {
+        cursor: pointer;
+        border-radius: 3em;
+        opacity: 70%;
+    }
+}
+
+.miniName {
+    font-size: 1.8em;
+}
