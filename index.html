@@ -20,13 +20,24 @@
     </header>
     <main id="app" class="main"> <!-- Vue will attach itself to this container -->
 
-        <div class="pad">
+        <div>
             <img class="img" src="./images/hero_img.jpg"> <!-- Hero Img -->
         </div>
         
         <h3 class="family"> Become A Part Of The Mini Cooper Family! </h3> <!-- Become mini family bar -->
 
-        <section class="three-items pad2">
+        <section class="topPad">
+            <nav id="character-nav">
+                <ul class="characters">
+                    <!-- hero thumb component goes here -->
+                    <theminithumb @loadlbdata="loadLightbox" v-for="mini in miniData" :mini="mini"></theminithumb>
+                </ul>
+            </nav>
+        </section>
+
+        <thelightbox @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
+
+        <!-- <section class="three-items pad2">
             <div class="pad">
                 <h3 class="miniName">Mini Cooper S All Electric</h3>
                 <img class="miniImg pad" src="./images/mini-electric.jpg">
@@ -54,32 +65,9 @@
                 <h3 class="miniName">Mini Countryman Hybrid SUV</h3>
                 <img class="miniImg pad" src="./images/mini-suv.jpg">
             </div>
-        </section>
-
-        <nav id="character-nav">
-            <ul class="characters">
-                <!-- hero thumb component goes here -->
-                <theminithumb @loadlbdata="loadLightbox" v-for="data in remoteData" :data="data"></theminithumb> <!-- represents TheHeroThumbnauil.js -->
-
-            </ul>
-        </nav>
-
-        <!-- <section> 
-            <div>
-                <section v-for="prof in remoteData">
-                    <div>
-                        <h2>{{ prof.name }}</h2>
-                        <h2>{{ prof.desc }}</h2>
-                        <h3>{{ prof.features }}</h3>
-                        <h3>{{ prof.price }}</h3>
-                    </div>
-        
-                    <img class="miniImg" :src='"images/" + prof.biopic' :alt="'prof.name'">
-                </section>
-            </div>
         </section> -->
 
-        <div class="centered hero-image"> <!-- Video -->
+         <div class="centered hero-image">
             <video controls class="video">
                 <source src="assets/Hansen_Evan_Tenuta_Matthew_infomerical.mp4" type="video/mp4">
             </video>
