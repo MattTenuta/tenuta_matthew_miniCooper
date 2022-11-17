@@ -43,6 +43,10 @@ nav img {
     padding-right: 1em;
 }
 
+.topPad {
+    padding-top: 4em;
+}
+
 .learnMore {
     font-size: 20px;
 }
@@ -57,8 +61,8 @@ nav img {
 }
 
 .img {
-    width: 1500px;
-    height: auto;
+    grid-column: 1/ span 4;
+    width: 100%;
 }
 
 .miniImg {

@@ -1,4 +1,4 @@
-import MiniThumb from './components/TheMiniThumbnail';
+import MiniThumb from './components/TheMiniThumbnail.js';
 import LightBox from './components/TheLightbox.js';
 
 (() => {
@@ -7,25 +7,19 @@ import LightBox from './components/TheLightbox.js';
 
   createApp({
     created() {
-      console.log('vue instance is created');
       // fetch the remote data here and pass it to the data object
 
       fetch('./data.json')
         .then(res => res.json())
-        .then(data => {
-          console.log(data);
-
-          // push the data into the vue instance
-          // the "this" keyword inside of the Vue instance ALWAYS refers to the instance itself
-          this.remoteData = data;
-        })
-      .catch(error => console.error(error));
+        .then(data => this.miniData = data)
+          .catch(error => console.error(error));
     },
 
     data() {
       return {
-        remoteData: {},
-        lbData: {}
+        miniData: {},
+        lbData: {},
+        showLB: false
       }
     },
 
@@ -35,8 +29,9 @@ import LightBox from './components/TheLightbox.js';
   },
 
     methods: {
-      loadLightbox(data) {
-        this.lbData = data;
+      loadLightbox(mini) {
+        this.lbData = mini;
+        this.showLB = true;
         }
         
     }
