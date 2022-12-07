@@ -8,8 +8,8 @@ import LightBox from './components/TheLightbox.js';
   createApp({
     created() {
       // fetch the remote data here and pass it to the data object
-
-      fetch('./data.json')
+      // './data.json' './scripts/json.php'
+      fetch('./scripts/json.php')
         .then(res => res.json())
         .then(data => this.miniData = data)
           .catch(error => console.error(error));
