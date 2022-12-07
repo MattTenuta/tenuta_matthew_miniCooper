@@ -1,78 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
     <title>Mini Cooper Site</title>
 </head>
-<body>
-    <header>
-        <nav class="nav">
-            <img class="logo" src="images/mini_cooper.svg">
+<body id="app" class="main">
+    <header class="head three-itemsHead">
+        <div class="pad3">
+            <a href="index.html"><img class="logo" src="images/mini_cooper.svg" alt="Mini Cooper Logo"></a>
+        </div>
+        <nav class="full" aria-label="Main Navigation">
+            <h2 class="hidden">Main Navigation</h2>
             <ul>
-                <li>Shop Now</li>
-                <li>Build & Price</li>
-                <li>Menu</li>
+                <li><a class="nav-element font" href="https://mini.ca/en/shopping/mini-next/list">Shop Now</a></li>
+                <li><a class="nav-element font" href="https://mini.ca/en/shopping/buildandprice#/">Build & Price</a></li>
+                <li><a class="active nav-element font" href="https://mini.ca/en/find-retailer">Learn More</a></li>
             </ul>
         </nav>
-    </header>
-    <main id="app" class="main"> <!-- Vue will attach itself to this container -->
 
-        <div>
-            <img class="img" src="./images/hero_img.jpg"> <!-- Hero Img -->
+        <!-- Mobile Menu -->
+       <div class="mobile tablet">
+        <input type="checkbox" id="overlay-input"/>
+        <label for="overlay-input" id="overlay-button">
+            <span class="clicky"></span>
+    </label>
+
+        <div id="overlay">
+            <ul>
+                <li><a class="font nav-element whiteBorder tab1" href="https://mini.ca/en/shopping/mini-next/list">Shop Now</a></li>
+                <li><a class="font nav-element tab2" href="https://mini.ca/en/shopping/buildandprice#/">Build & Price</a></li>
+                <li><a class="active font nav-element tab3" href="https://mini.ca/en/find-retailer">Learn More</a></li>
+            </ul>
         </div>
-        
-        <h3 class="family"> Become A Part Of The Mini Cooper Family! </h3> <!-- Become mini family bar -->
+        </div>
+        <!-- End Mobile Menu -->
+    </header>
+    <main id="app" class="main bckgrd">
 
-        <section class="topPad">
-            <nav id="character-nav">
-                <ul class="characters three-items">
-                    <!-- hero thumb component goes here -->
+        <section class="one-item hero"></section>
+        
+        <div class="one-item">
+            <h3 class="family font"> Become A Part Of The Mini Cooper Family! </h3> <!-- Become mini family bar -->
+        </div>
+
+        <section class="one-item"><h2 class="hidden">Portfolio</h2>
+            <nav class="pieceSpace"><h3 class="hidden">Portfolio Pieces</h3>
+                <ul class="characters four-itemsPiece">
                     <theminithumb @loadlbdata="loadLightbox" v-for="mini in miniData" :mini="mini"></theminithumb>
                 </ul>
-            </nav>
+            </nav></a>
         </section>
 
-        <thelightbox @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
-
-        <!-- <section class="three-items pad2">
-            <div class="pad">
-                <h3 class="miniName">Mini Cooper S All Electric</h3>
-                <img class="miniImg pad" src="./images/mini-electric.jpg">
-            </div>
-            <div class="pad">
-                <h3 class="miniName"> Mini Countryman All4</h3>
-                <img class="miniImg pad" src="./images/mini-all4.jpg">
-            </div>
-            <div class="pad">
-                <h3 class="miniName">Mini Cooper 3 Door</h3>
-                <img class="miniImg pad" src="./images/mini-3door.jpg">
-            </div>
-        </section>
-
-        <section class="three-items pad2">
-            <div class="pad">
-                <h3 class="miniName">Mini Cooper 5 Door</h3>
-                <img class="miniImg pad" src="./images/mini-5door.jpg">
-            </div>
-            <div class="pad">
-                <h3 class="miniName">Mini Cooper Convertable</h3>
-                <img class="miniImg pad" src="./images/mini-convertable.jpg">
-            </div>
-            <div class="pad">
-                <h3 class="miniName">Mini Countryman Hybrid SUV</h3>
-                <img class="miniImg pad" src="./images/mini-suv.jpg">
-            </div>
-        </section> -->
-
-         <div class="centered hero-image">
-            <video controls class="video">
-                <source src="assets/Hansen_Evan_Tenuta_Matthew_infomerical.mp4" type="video/mp4">
-            </video>
-        </div>
+        <thelightbox class="fluid" @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
     </main>
+
+    <footer class="foot footerColor">
+        <section class="topPad2 three-itemsFoot">
+            <h2 class="hidden">Footer</h2>
+            <div class="white">
+                <h3 class="footerText centerText pad2 font">Contact Info:</h3>
+                <h4 class="footerText centerText pad2 font">Email: Support@minicooper.ca</h4>
+                <h4 class="footerText centerText pad2 font">Phone: +1 (213)-996-6000</h4>
+
+            </div>
+            <div class="gridFootEdit2">
+                    <a class="pad4" href="https://www.instagram.com/mini/?hl=en"><img class="insta" src="images/insta.png" alt="Instagram Logo"></a>
+                    <a class="pad4" href="https://twitter.com/MINI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="twitter" src="images/twitter.png" alt="Twitter Logo"></a>
+                    <a class="pad4" href="https://www.facebook.com/MINI.canada/"><img class="facebook" src="images/facebook.png" alt="Facebook Logo"></a>
+            </div>
+        </section>
+    </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/main.js" type="module" defer></script>

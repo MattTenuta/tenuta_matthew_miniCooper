@@ -8,9 +8,9 @@ export default {
     },
 
     template: `
-    <li @click="loadLBData">
-        <img :src='"images/" + mini.biopic' alt="Mini img" style="width: 300px">
-        <h4>{{mini.name}}</h4>
+    <li @click="loadLBData"><a href="#top">
+        <img :src='"images/" + mini.miniPic' alt="Mini img" style="width: 300px"></a>
+        <h4 class="font white textCenter">{{mini.name}}</h4>
     </li>
     `,
 
