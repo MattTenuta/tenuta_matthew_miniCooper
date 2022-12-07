@@ -5,8 +5,8 @@
 //error_reporting(E_ALL);
 
 // Setup Connection Creds
-$user = "MattTenuta";
-$pass = "Y@y3eT$!";
+$user = "";
+$pass = "";
 $url = "localhost";
 $db = "db_fip";
 
