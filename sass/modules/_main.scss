@@ -158,10 +158,6 @@ nav img {
     padding-top: 4em;
 }
 
-.video {
-  max-width: 800px;
-}
-
 .underlineWhite {
     border-bottom: 6px solid #e6e6e6;
 }
@@ -257,6 +253,11 @@ body video {
       grid-column: span 4;
     }
 
+    .hidden {
+      display: none;
+  }
+  
+
     .one-item {
         display: grid;
         grid-column: 1 / span 4;
@@ -346,7 +347,7 @@ body video {
       .lightbox {
         // display: none;
         max-width: 2000px;
-        height: 177vh;
+        height: 210vh;
       
         position: absolute;
         left: 0;
@@ -387,6 +388,11 @@ body video {
         .site {
           max-width: none;
         }
+
+        .hidden {
+          display: none;
+      }
+      
     
         .full {
           display: grid;
@@ -490,7 +496,7 @@ body video {
           .lightbox {
             // display: none;
             max-width: 2000px;
-            height: 167vh;
+            height: 200vh;
           
             position: absolute;
             left: 0;
